@@ -17,7 +17,6 @@ if (strcasecmp($ime, $trazenoIme) == 0 && $lozinka) {
 echo '<br>';
 
 // Zadatak 2
-
 // Rucno postavljeno vreme (primer)
 $sati = 20; // Ovde možete postaviti bilo koje vreme koje želite proveriti
 
