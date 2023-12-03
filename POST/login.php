@@ -12,12 +12,12 @@ $namesArray = ['Toma', 'Petar', 'Marko']; // Imena sa velikim početnim slovom
 if(!$nameSet || strlen($name) < 3) {
     die('Ime nije prosledjeno ili je ime manje od 3 karaktera');
 }
-    $nameLower = strtolower($name); // Konvertovanje unetog imena u mala slova
-    $lowercaseNamesArray = array_map('strtolower', $namesArray); // Konvertovanje imena u nizu u mala slova
+$nameLower = strtolower($name); // Konvertovanje unetog imena u mala slova
+$lowercaseNamesArray = array_map('strtolower', $namesArray); // Konvertovanje imena u nizu u mala slova
 
-    if(in_array($nameLower, $lowercaseNamesArray)) {
-        die('Korisnik vec postoji, molim vas probajte drugo ime!');
-    }
+if(in_array($nameLower, $lowercaseNamesArray)) {
+    die('Korisnik vec postoji, molim vas probajte drugo ime!');
+}
 
 echo $name;
 
